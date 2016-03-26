@@ -1634,13 +1634,13 @@ font-family: 'Playfair Display', serif;
 
 	#banner {
 		background-color: #2a2b2e;
-		background-image: url("visuals/images/overlay2.png"), url("../slike/cover2.png");
+		background-image: url("visuals/images/overlay2.png"), url("../slike/cover best.png");
 		background-position: top left,						center center;
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
 		border-top: 0 !important;
 		color: #c9caca;
-		padding: 6em 3em;
+		padding: 11em 3em;
 		text-align: center;
 	}
 
