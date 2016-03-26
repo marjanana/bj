@@ -1,0 +1,122 @@
+/*
+	Locus by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Basic */
+
+	h2 {
+		font-size: 1.25em;
+	}
+
+	h3 {
+		font-size: 1.1em;
+	}
+
+	h4 {
+		font-size: 1em;
+	}
+
+/* List */
+
+	ul.icons li {
+		padding: 0 0.75em 0 0;
+	}
+
+		ul.icons li .icon {
+			height: 2.5em;
+			line-height: 2.5em;
+			width: 2.5em;
+		}
+
+			ul.icons li .icon:before {
+				font-size: 1em;
+			}
+
+/* Section/Article */
+
+	header.major p {
+		font-size: 1em;
+		margin: 0 0 3em 0;
+		padding: 1em 0 0 0;
+	}
+
+	footer.major {
+		padding: 3em 0 0 0;
+	}
+
+		footer.major p {
+			font-size: 1em;
+		}
+
+/* Main */
+
+	.main.style1 > section {
+		padding: 3em 3em 1em 3em !important;
+	}
+
+/* Wrapper */
+
+	#wrapper {
+		margin-top: 3em;
+	}
+
+		#wrapper > .main {
+			padding: 3em 3em 1em 3em;
+		}
+
+/* Header */
+
+	#header > header {
+		padding: 3.5em 3em 2em 3em;
+	}
+
+		#header > header h1 {
+			font-size: 1.5em;
+		}
+
+		#header > header p {
+			font-size: 1.1em;
+			margin: 1em 0 0 0;
+			padding: 0.5em 0 0 0;
+			top: -0.25em;
+		}
+
+	#header.alt > header {
+		padding: 1.75em 3em 1.5em 3em;
+	}
+
+		#header.alt > header h1 {
+			font-size: 1em;
+		}
+
+		#header.alt > header p {
+			font-size: 1em;
+		}
+
+/* Banner */
+
+	#banner {
+		padding: 3em 3em;
+	}
+
+/* Footer */
+
+	#footer {
+		padding: 3em 3em 1em 3em;
+	}
+
+		#footer h2 {
+			font-size: 1.25em;
+		}
+
+			#footer h2 + p {
+				margin: 0 0 2em 0;
+			}
+
+		#footer .icons {
+			left: -3em;
+			top: 1em;
+			width: calc(100% + 6em);
+		}

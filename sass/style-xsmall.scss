@@ -1,0 +1,116 @@
+@import 'vars';
+@import 'mixins';
+
+/*
+	Locus by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+$size-main-pad-tb: 3em;
+$size-main-pad-lr: 1.5em;
+
+/* List */
+
+	ul {
+		&.actions {
+			margin: 0 0 $size-element-margin 0;
+			
+			li {
+				display: block;
+				padding: ($size-element-margin * 0.5) 0 0 0;
+				text-align: center;
+				width: 100%;
+				
+				&:first-child {
+					padding-top: 0;
+				}
+				
+				> * {
+					margin: 0 !important;
+					width: 100%;
+					
+					&.icon {
+						&:before {
+							margin-left: -2em;
+						}
+					}
+				}
+			}
+			
+			&.small {
+				li {
+					padding: ($size-element-margin * 0.25) 0 0 0;
+
+					&:first-child {
+						padding-top: 0;
+					}
+				}
+			}
+		}
+	}
+
+/* Button */
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	.button {
+		padding: 0;
+	}
+
+/* Main */
+
+	.main {
+		&.style1 {
+			> section {
+				padding: $size-main-pad-tb $size-main-pad-lr ($size-main-pad-tb - $size-element-margin) $size-main-pad-lr !important;
+			}
+		}
+	}
+
+/* Wrapper */
+
+	#wrapper {
+		border-radius: 0;
+		margin-top: 0;
+		
+		> .main {
+			padding: $size-main-pad-tb $size-main-pad-lr ($size-main-pad-tb - $size-element-margin) $size-main-pad-lr;
+		}
+	}
+
+/* Header */
+
+	#header {
+		border-radius: 0;
+
+		> header {
+			padding: 4.5em $size-main-pad-lr 2em $size-main-pad-lr;
+		}
+
+		&.alt {
+			> header {
+				padding: 3em $size-main-pad-lr 1.25em $size-main-pad-lr;
+			}
+		}
+	}
+
+/* Banner */
+	
+	#banner {
+		padding: $size-main-pad-tb $size-main-pad-lr;
+	}
+		
+/* Footer */
+
+	#footer {
+		border-radius: 0;
+		padding: $size-main-pad-tb $size-main-pad-lr ($size-main-pad-tb - $size-element-margin) $size-main-pad-lr;
+
+		.icons {
+			left: ($size-main-pad-lr * -1);
+			top: ($size-main-pad-tb - $size-element-margin);
+			width: calc(100% + #{$size-main-pad-lr * 2});
+		}
+	}

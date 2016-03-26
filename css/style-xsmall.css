@@ -1,0 +1,98 @@
+/*
+	Locus by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* List */
+
+	ul.actions {
+		margin: 0 0 2em 0;
+	}
+
+		ul.actions li {
+			display: block;
+			padding: 1em 0 0 0;
+			text-align: center;
+			width: 100%;
+		}
+
+			ul.actions li:first-child {
+				padding-top: 0;
+			}
+
+			ul.actions li > * {
+				margin: 0 !important;
+				width: 100%;
+			}
+
+				ul.actions li > *.icon:before {
+					margin-left: -2em;
+				}
+
+		ul.actions.small li {
+			padding: 0.5em 0 0 0;
+		}
+
+			ul.actions.small li:first-child {
+				padding-top: 0;
+			}
+
+/* Button */
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	.button {
+		padding: 0;
+	}
+
+/* Main */
+
+	.main.style1 > section {
+		padding: 3em 1.5em 1em 1.5em !important;
+	}
+
+/* Wrapper */
+
+	#wrapper {
+		border-radius: 0;
+		margin-top: 0;
+	}
+
+		#wrapper > .main {
+			padding: 3em 1.5em 1em 1.5em;
+		}
+
+/* Header */
+
+	#header {
+		border-radius: 0;
+	}
+
+		#header > header {
+			padding: 4.5em 1.5em 2em 1.5em;
+		}
+
+		#header.alt > header {
+			padding: 3em 1.5em 1.25em 1.5em;
+		}
+
+/* Banner */
+
+	#banner {
+		padding: 3em 1.5em;
+	}
+
+/* Footer */
+
+	#footer {
+		border-radius: 0;
+		padding: 3em 1.5em 1em 1.5em;
+	}
+
+		#footer .icons {
+			left: -1.5em;
+			top: 1em;
+			width: calc(100% + 3em);
+		}

@@ -1,0 +1,146 @@
+@import 'vars';
+@import 'mixins';
+
+/*
+	Locus by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+$size-main-pad-tb: 3em;
+$size-main-pad-lr: 3em;
+
+/* Basic */
+
+	h2 {
+		font-size: 1.25em;
+	}
+
+	h3 {
+		font-size: 1.1em;
+	}
+
+	h4 {
+		font-size: 1em;
+	}
+
+/* List */
+
+	ul {
+		&.icons {
+			li {
+				padding: 0 0.75em 0 0;
+				
+				.icon {
+					height: 2.5em;
+					line-height: 2.5em;
+					width: 2.5em;
+					
+					&:before {
+						font-size: 1em;
+					}
+				}
+			}
+		}
+	}
+		
+/* Section/Article */
+
+	header {
+		&.major {
+			p {
+				font-size: 1em;
+				margin: 0 0 ($size-element-margin * 1.5) 0;
+				padding: ($size-element-margin * 0.5) 0 0 0;
+			}
+		}
+	}
+	
+	footer {
+		&.major {
+			padding: ($size-element-margin * 1.5) 0 0 0;
+
+			p {
+				font-size: 1em;
+			}
+		}
+	}
+
+/* Main */
+
+	.main {
+		&.style1 {
+			> section {
+				padding: $size-main-pad-tb $size-main-pad-lr ($size-main-pad-tb - $size-element-margin) $size-main-pad-lr !important;
+			}
+		}
+	}
+
+/* Wrapper */
+
+	#wrapper {
+		margin-top: 3em;
+		
+		> .main {
+			padding: $size-main-pad-tb $size-main-pad-lr ($size-main-pad-tb - $size-element-margin) $size-main-pad-lr;
+		}
+	}
+	
+/* Header */
+
+	#header {
+		> header {
+			padding: 3.5em $size-main-pad-lr 2em $size-main-pad-lr;
+
+			h1 {
+				font-size: 1.5em;
+			}
+			
+			p {
+				font-size: 1.1em;
+				margin: ($size-element-margin * 0.5) 0 0 0;
+				padding: ($size-element-margin * 0.25) 0 0 0;
+				top: -0.25em;
+			}
+		}
+
+		&.alt {
+			> header {
+				padding: 1.75em $size-main-pad-lr 1.5em $size-main-pad-lr;
+				
+				h1 {
+					font-size: 1em;
+				}
+				
+				p {
+					font-size: 1em;
+				}
+			}
+		}
+	}
+
+/* Banner */
+	
+	#banner {
+		padding: $size-main-pad-tb $size-main-pad-lr;
+	}
+		
+/* Footer */
+
+	#footer {
+		padding: $size-main-pad-tb $size-main-pad-lr ($size-main-pad-tb - $size-element-margin) $size-main-pad-lr;
+
+		h2 {
+			font-size: 1.25em;
+
+			& + p {
+				margin: 0 0 $size-element-margin 0;
+			}
+		}
+
+		.icons {
+			left: ($size-main-pad-lr * -1);
+			top: ($size-main-pad-tb - $size-element-margin);
+			width: calc(100% + #{$size-main-pad-lr * 2});
+		}
+	}
