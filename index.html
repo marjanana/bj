@@ -20,13 +20,33 @@
          <link rel="stylesheet" href="css/style.css" />
          <link rel="stylesheet" href="css/style-xlarge.css" />
       </noscript>
+      <script>$(document).ready(function(){
+
+   //Check to see if the window is top if not then display button
+   $(window).scroll(function(){
+      if ($(this).scrollTop() > 100) {
+         $('.scrollToTop').fadeIn();
+      } else {
+         $('.scrollToTop').fadeOut();
+      }
+   });
+
+   //Click event to scroll to top
+   $('.scrollToTop').click(function(){
+      $('html, body').animate({scrollTop : 0},800);
+      return false;
+   });
+
+});</script>
       <!--[if lte IE 8]>
       <link rel="stylesheet" href="css/ie/v8.css" />
       <![endif]-->
       <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
    </head>
    <body>
+
       <div id="wrapper" class="container">
+
          <!-- Header -->
          <section id="header">
             <header>
@@ -46,8 +66,7 @@
 
                   -->
                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  </li>
+                  <li><a href="index.html">Home</a></li><li><a href="contact.html">Contact</a></li>
                </ul>
             </nav>
          </section>
@@ -63,6 +82,7 @@
          <section class="main style2">
             <header class="major">
             </header>
+
             <p>My darling Jake and Rose, <br>
                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;I’ve gotten this website together for you, because when I Googled myself, I found that after forty plus years of writing for magazines and newspapers, only three items showed up on line. The first was the only bad review of my book, <em>Can This Be Love</em>?, a pathologically nasty piece of prose by an anonymous <em>Kirkus</em> reviewer, who made such off-target assessments of my personal life that I can only guess he or she was looking at it through the lens of his or her own misery. The second was one of the two pieces I wrote for <em>The New York Times. </em> (The other one had gone missing, but you’ll find it here.) And the third was “The Myth of the Male Orgasm,” which I originally wrote for The <em>Village Voice</em>, but which was reprinted in several other places and included in both <em>Titters, The First Collection of Humor by Women</em>, and a college textbook for a women’s studies course. (Go figure!) <br>
                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;And that, essentially, was it.  The dozens and dozens of pieces I wrote for <em>Ms., Glamour, Family Circle, Redbook, McCall’s, New Woman, The East Hampton Star, Parenting, The Daily News, Child, Sesame Street Magazine, Health</em>, etc., never made it onto the www. And so many of them, as you’ll see, were about you—your triumphs and shenanigans and all the ways you made my life so wonderful. <br>
@@ -71,6 +91,13 @@
                All my love,<br>
                Mom
             </p>
+             <section class="left">
+               <a href="village voice.html" class="image"><img src="slike/vvoice.jpg" alt="" /></a>
+               <div class="content">
+                  <h3>The Village Voice</h3>
+                  <p>To read article, click<a href="village voice.html"> here</a>.</p>
+               </div>
+            </section>
             <section class="right">
                <a href="nytimes.html" class="image"><img src="slike/timeslogo.jpg"></a>
                <div class="content">
@@ -215,7 +242,15 @@
                   <p>To read article, click<a href="working women.html"> here.</a></p>
                </div>
             </section>
+            <section class="right">
+               <a href="highlights.html" class="image"><img src="slike/highlights.png" alt="highlights magazine logo" /></a>
+               <div class="content">
+                  <h3>Highlights</h3>
+                  <p>To read article, click<a href="highlights.html"> here.</a></p>
+               </div>
+            </section>
          </section>
+         <a href="#" class="scrollToTop"></a>
       </div>
       <div id="copyright">
       </div>
